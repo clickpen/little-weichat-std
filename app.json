@@ -1,0 +1,13 @@
+{
+	"pages": [
+		"pages/list/list",
+		"pages/index/index",
+		"pages/index2/index2"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#0f0",
+		"navigationBarTextStyle": "#fff",
+		"navigationBarTitleText": "title"
+	}
+}

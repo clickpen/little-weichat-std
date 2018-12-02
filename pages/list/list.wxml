@@ -1,0 +1,150 @@
+<!-- pages/list/list.wxml -->
+<!-- <text>pages/list/list.wxml</text> -->
+<view class='container'>
+	<!-- 推荐 -->
+	<view class='recommend-container'>
+		<view class='recommend-article'>
+			<text class='date'>十月七日</text>
+			<text class='recommend-title'>大大大：爱德华发挥对方好</text>
+			<image class='recommend-cover' mode='widthFix' src='../../images/卡农.png' />
+		</view>
+		<view class='recommend-box'>
+			<text>+</text>
+			<text>哈哈</text>
+			<text>哈哈</text>
+			<text>哈哈</text>
+			<text>哈哈</text>
+			<text>哈哈</text>
+			<text>哈哈</text>
+			<text>哈哈</text>
+			<text>···</text>
+		</view>
+	</view>
+	<!-- 列表 -->
+	<view class="recommend-list-container">
+		<view class="per-article">
+			<view class="article-head">
+				<image src='../../images/卡农.png' />
+				<text>neffy</text>
+				<text>等</text>
+				<text>96</text>
+				<text>人马克了</text>
+			</view>
+			<view class="article-cover">
+				<image mode="widthFix" src='../../images/卡农.png' />
+			</view>
+			<view class="article-title">
+				<text>安科技和地方</text>
+			</view>
+			<view class="article-handle-box">
+				<view class="article-type">
+					<text>深度阅读</text>
+				</view>
+				<view class="article-handle">
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="per-article">
+			<view class="article-head">
+				<image src='../../images/卡农.png' />
+				<text>neffy</text>
+				<text>等</text>
+				<text>96</text>
+				<text>人马克了</text>
+			</view>
+			<view class="article-cover">
+				<image mode="widthFix" src='../../images/卡农.png' />
+			</view>
+			<view class="article-title">
+				<text>安科技和地方</text>
+			</view>
+			<view class="article-handle-box">
+				<view class="article-type">
+					<text>深度阅读</text>
+				</view>
+				<view class="article-handle">
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="per-article">
+			<view class="article-head">
+				<image src='../../images/卡农.png' />
+				<text>neffy</text>
+				<text>等</text>
+				<text>96</text>
+				<text>人马克了</text>
+			</view>
+			<view class="article-cover">
+				<image mode="widthFix" src='../../images/卡农.png' />
+			</view>
+			<view class="article-title">
+				<text>安科技和地方</text>
+			</view>
+			<view class="article-handle-box">
+				<view class="article-type">
+					<text>深度阅读</text>
+				</view>
+				<view class="article-handle">
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="per-article">
+			<view class="article-head">
+				<image src='../../images/卡农.png' />
+				<text>neffy</text>
+				<text>等</text>
+				<text>96</text>
+				<text>人马克了</text>
+			</view>
+			<view class="article-cover">
+				<image mode="widthFix" src='../../images/卡农.png' />
+			</view>
+			<view class="article-title">
+				<text>安科技和地方</text>
+			</view>
+			<view class="article-handle-box">
+				<view class="article-type">
+					<text>深度阅读</text>
+				</view>
+				<view class="article-handle">
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+					<view>
+						<image src='../../images/卡农.png' />
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/index/index.wxml-->
+<!-- <text>pages/index/index.wxml</text> -->
+
+<!-- div -> view
+    img -> image 图片自适应：使用rpx单位 750rpx为满屏 1135rpx为满屏高
+    span -> text  有decode="true"时可识别&nbsp; 增加space="ensp" 可识别空格同时值有emsp，nbsp可参考文档-->
+	<!-- catch  可阻止事件冒泡 bind阻止不了 -->
+<view class='container'>
+    <image class='img1' src='../../images/卡农.PNG' />
+    <text class="prograf1">来一个随意的描述</text>
+    <text catch:tap="hrefto" class="prograf2" decode="true" space="ensp">哈    哈</text>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/index2/index2.wxml-->
+<!-- <text>pages/index2/index2.wxml</text> -->
+<!-- bind方法会有时间冒泡，用catch会阻止事件冒泡 -->
+<view class='container'>
+	<view class='picture-box'>
+		<image class='picture' mode='widthFix' src='../../images/卡农.png'/>
+		<text class='title'>这里是一段文字，非常非常的多，岁哦一我就不想写了</text>
+	</view>
+	<view class='name-box'>
+		<text>这里是林格爱一段文字</text>
+	</view>
+</view>

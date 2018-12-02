@@ -1,0 +1,103 @@
+/* pages/list/list.wxss */
+.recommend-container {
+	padding: 0 25rpx;
+}
+.recommend-article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.date {
+	position: relative;
+	font-size: 52rpx;
+	letter-spacing: 10rpx;
+	padding-bottom: 24rpx;
+	margin-top: 20rpx;
+}
+.date::after {
+	content: ' ';
+	position: absolute;
+	left: 62rpx;
+	bottom: 0;
+	display: block;
+	width: 114rpx;
+	height: 4rpx;
+	background-color: #999;
+}
+.recommend-title {
+	margin-top: 20rpx;
+	font-size: 28rpx;
+}
+.recommend-cover {
+	margin-top: 30rpx;
+	width: 700rpx;
+}
+.recommend-box {
+
+}
+.recommend-box text {
+	border: 1px solid black;
+	display: inline-block;
+	padding: 10rpx 20rpx;
+	font-size: 20rpx;
+	margin: 20rpx 20rpx 20rpx 0;
+}
+.recommend-box text:first-of-type {
+	background-color: black;
+	color: #fff;
+	font-weight: bold;
+}
+
+.recommend-list-container {
+	background-color: #ebebeb;
+	padding: 35rpx 35rpx 0;
+}
+.per-article {
+	background-color: #fff;
+	padding-bottom: 30rpx;
+	margin-bottom: 30rpx;
+}
+.per-article:last-of-type {
+	margin-bottom: 0;
+}
+.article-head {
+	padding: 20rpx;
+}
+.article-head image {
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-right: 10rpx;
+}
+.article-head text {
+	font-size: 28rpx;
+	color: #666;
+}
+.article-cover image {
+	width: 100%;
+}
+.article-title {
+	margin: 30rpx;
+}
+.article-title text {
+	font-size: 40rpx;
+}
+.article-handle-box {
+	display: flex;
+	/* 调节主轴上的方向 */
+	justify-content: space-between;
+	padding: 0 30rpx;
+}
+.article-type text {
+	border: 1px solid black;
+	padding: 10rpx 20rpx;
+}
+.article-handle {
+	display: flex;
+}
+.article-handle image {
+	width: 50rpx;
+	height: 50rpx;
+	margin-left: 20rpx;
+}
