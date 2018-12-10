@@ -13,6 +13,37 @@ Page({
 	 */
 	onLoad: function (options) {
 		let that = this;
+		this.getPageData();
+		// wx.showModal({
+		// 	title: 'title',
+		// 	content: 'content',
+		// 	success: function(res) {
+		// 		console.log(res);
+		// 		if(res.confirm) {
+		// 			wx.showToast({
+		// 				title: '你成功啦',
+		// 			})
+		// 		}
+		// 		if(res.cancel) {
+		// 			wx.showToast({
+		// 				title: '真的取消了',
+		// 				icon: 'close'
+		// 			})
+		// 		}
+		// 	}
+		// });
+		// wx.showLoading({
+		// 	title: '加载中',
+		// })
+		// wx.showActionSheet({
+		// 	itemList: ['1', '2', '3', '4'],
+		// })
+		
+		
+	},
+	// 数据获取函数
+	getPageData: function() {
+		let that = this;
 		wx.request({
 			url: 'http://localhost/wxdata.json',
 			method: 'GET',
@@ -20,8 +51,8 @@ Page({
 				userid: 112233,
 				name: 'hahaceshi'
 			},
-			success: function(res) {
-				if(res.statusCode == 200) {
+			success: function (res) {
+				if (res.statusCode == 200) {
 					// setData方法可以将改变的值渲染在页面中
 					that.setData({
 						pageData: res.data
@@ -31,7 +62,6 @@ Page({
 			}
 		})
 	},
-
 	/**
 	 * 生命周期函数--监听页面初次渲染完成
 	 */
@@ -80,6 +110,6 @@ Page({
 	 * 用户点击右上角分享
 	 */
 	onShareAppMessage: function () {
-
+		// 点击右上角分享的时候触发该方法
 	}
 })
