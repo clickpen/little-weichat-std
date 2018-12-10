@@ -12,7 +12,24 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function (options) {
-
+		let that = this;
+		wx.request({
+			url: 'http://localhost/wxdata.json',
+			method: 'GET',
+			data: {
+				userid: 112233,
+				name: 'hahaceshi'
+			},
+			success: function(res) {
+				if(res.statusCode == 200) {
+					// setData方法可以将改变的值渲染在页面中
+					that.setData({
+						pageData: res.data
+					})
+				}
+				console.log(res);
+			}
+		})
 	},
 
 	/**
