@@ -1,1 +1,4 @@
-{}
+{
+	"enablePullDownRefresh": true,
+	"onRachBottomDistance": 50
+}

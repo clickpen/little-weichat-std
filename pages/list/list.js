@@ -64,14 +64,16 @@ Page({
 	 * 页面相关事件处理函数--监听用户下拉动作
 	 */
 	onPullDownRefresh: function () {
-
+		// 需要在json文件中设置下拉刷新为true
+		console.log('下拉刷新了');
 	},
 
 	/**
 	 * 页面上拉触底事件的处理函数
 	 */
 	onReachBottom: function () {
-
+		// 需要在jso中设置距离底部还有多远的时候触发该函数,一般用于获取更多数据
+		console.log('快要结束了触发的方法');
 	},
 
 	/**
