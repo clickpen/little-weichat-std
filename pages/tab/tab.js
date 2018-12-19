@@ -1,4 +1,5 @@
 // pages/tab/tab.js
+var request = require('../../utils/api.js');
 Page({
 
 	/**
@@ -7,7 +8,17 @@ Page({
 	data: {
 		data: '数据未获取'
 	},
-
+	sendRequest: function() {
+		request({
+			url: 'https://www.baidu.com',
+			success: function(res) {
+				console.log('返回的res:', res);
+			},
+			error: function(err) {
+				console.log(err);
+			}
+		})
+	},
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
