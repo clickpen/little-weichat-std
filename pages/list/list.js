@@ -21,6 +21,7 @@ Page({
 		this.setData({
 			listlike: listlike
 		});
+		wx.setStorageSync('listlike', listlike)
 	},
 	/**
 	 * 生命周期函数--监听页面加载
@@ -52,8 +53,40 @@ Page({
 		// wx.showActionSheet({
 		// 	itemList: ['1', '2', '3', '4'],
 		// })
-		
-		
+		// 设置缓存
+		// wx.setStorage({
+		// 	key: 'deng',
+		// 	data: '老邓'
+		// })
+		// 移除相应的缓存
+		// wx.removeStorage({
+		// 	key: 'deng',
+		// 	success: function(res) {
+		// 		console.log('移除了deng');
+		// 		console.log(res);
+		// 	},
+		// })
+		// 获取缓存
+		// wx.getStorage({
+		// 	key: 'deng',
+		// 	success: function(res) {
+		// 		console.log(res.data);
+		// 	},
+		// })
+		// 模拟喜欢的缓存
+
+		// 喜欢的数据放进缓存
+		var listLikeStorage = wx.getStorageSync('listlike');
+		// 设置缓存，当没有该缓存的时候先设置为空{}
+		if(!listLikeStorage) {
+			listLikeStorage = {};
+		}
+		// 通过缓存设置数据中的listlike
+		this.setData({
+			listlike: listLikeStorage
+		});
+		// tap事件的时候重新赋值进缓存去
+		console.log(this.data.listlike);
 	},
 	// 数据获取函数
 	getPageData: function() {
