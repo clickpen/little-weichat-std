@@ -1,0 +1,3 @@
+<!--pages/tab/tab.wxml-->
+<!-- <text>pages/tab/tab.wxml</text> -->
+<view>拿到的数据：{{data}}</view>

@@ -23,6 +23,12 @@ Page({
 		});
 		wx.setStorageSync('listlike', listlike)
 	},
+	hrefother: function(e) {
+		var data = e.currentTarget.dataset.articletypeid;
+		wx.navigateTo({
+			url: '/pages/tab/tab?articletypeid=' + data,
+		})
+	},
 	/**
 	 * 生命周期函数--监听页面加载
 	 */

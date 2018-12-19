@@ -2,7 +2,8 @@
 	"pages": [
 		"pages/list/list",
 		"pages/index/index",
-		"pages/index2/index2"
+		"pages/index2/index2",
+		"pages/tab/tab"
 	],
 	"window": {
 		"backgroundTextStyle": "light",

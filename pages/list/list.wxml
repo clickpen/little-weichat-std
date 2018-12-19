@@ -9,7 +9,7 @@
 			<image class='recommend-cover' mode='widthFix' src='../../images/卡农.png' />
 		</view>
 		<view class='recommend-box' >
-			<text wx:for="{{pageData.list}}" wx:key="{{index}}">{{item}}</text>
+			<text bindtap="hrefother" wx:for="{{pageData.list}}" wx:key="{{index}}" data-articleTypeId="{{index}}">{{item}}</text>
 			<text>···</text>
 		</view>
 	</view>
