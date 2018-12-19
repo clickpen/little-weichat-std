@@ -5,9 +5,23 @@ Page({
 	 * 页面的初始数据
 	 */
 	data: {
-
+		islike: false,
+		listlike: {
+			0: true,
+			1: false,
+			2: true,
+			3: false
+		}
 	},
-
+	onLikeTap: function(e) {
+		var index = e.currentTarget.dataset.articleindex;
+		console.log(index);
+		var listlike = this.data.listlike;
+		listlike[index] = !this.data.listlike[index];
+		this.setData({
+			listlike: listlike
+		});
+	},
 	/**
 	 * 生命周期函数--监听页面加载
 	 */

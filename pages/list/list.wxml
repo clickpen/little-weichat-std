@@ -41,7 +41,8 @@
 						<image src='../../images/卡农.png' />
 					</view>
 					<view>
-						<image src='../../images/卡农.png' />
+						<image bindtap="onLikeTap" data-articleIndex="{{index}}" wx:if="{{listlike[index]}}" src='../../images/1.png' />
+						<image bindtap="onLikeTap" data-articleIndex="{{index}}" wx:else src='../../images/2.png' />
 					</view>
 				</view>
 			</view>
